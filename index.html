@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> PERSONAL PORTFOLIO </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--body-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#portfolio">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>OMAIMA NAEEEM</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <h3>Passionate Full Stack Web Developer Building innovative and scalable web solutions to bring your ideas
+                to life.</h3>
+            <div class="social-media">
+                <a href="https://github.com/omaimanaeem800"><i class='bx bxl-github'></i></a>
+                <a href="www.linkedin.com/in/omaima-naeem-9330b0291"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <a href="c:\Users\Nabeel\Desktop\resume\omaima_naeem.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="image/1665641094.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img id="about-img" src="image/computer_engineer-compare-page.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p id="about-text">
+                A highly skilled and detail-oriented Web and App Developer with a passion for crafting seamless,
+                visually captivating, and user-centric digital experiences. Specializing in frontend development, I
+                excel in designing and building responsive, high-performance web and mobile applications that prioritize
+                usability and aesthetics. With a deep understanding of UI/UX principles, modern frameworks, and emerging
+                technologies, I am committed to delivering innovative solutions that enhance user engagement and
+                business growth.
+            </p>
+            <a href="#" class="btn" id="read-more-btn">Read More</a>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("read-more-btn").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            document.getElementById("about-text").innerHTML = `
+                    A highly skilled and detail-oriented Frontend Developer with a passion for creating seamless, visually compelling, and user-centric web experiences. With expertise in UI/UX design and a strong foundation in JavaScript, HTML, CSS, PHP, and Bootstrap, I specialize in building dynamic, responsive, and efficient web applications. Leveraging hands-on project experience and a solid academic background, I am committed to delivering intuitive, high-performance solutions that enhance user engagement. Driven by innovation and continuous learning, I am eager to contribute my expertise in a forward-thinking environment while refining my skills and staying at the forefront of emerging technologies.
+
+ <br><br>
+                    📧 <strong>Email:</strong> <a href="mailto:omaimanaeem322@gmail.com">omaimanaeem322@gmail.com</a>
+                `;
+            this.style.display = "none"; // Hide the button after expanding
+        });
+    </script>
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Expert in designing and developing modern, scalable, and responsive websites using cutting-edge
+                    technologies such as HTML, CSS, JavaScript, PHP, MySQL, React, and Node.js. Strong background in
+                    backend integration and performance optimization.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-crop'></i>
+                <h3>UI/UX Design</h3>
+                <p>Specialized in creating intuitive, user-friendly, and visually appealing designs. Proficient in
+                    wireframing, prototyping, and user research using industry-leading tools like Figma, Adobe XD, and
+                    Sketch. Focused on enhancing user experience through seamless interface design.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-instagram-alt'></i>
+                <h3>App Design</h3>
+                <p>Dedicated to crafting engaging and high-performance mobile applications with a focus on usability and
+                    aesthetics. Expertise in React Native, and iOS & Android UI guidelines to build functional and
+                    visually compelling apps.</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+
+            <!-- KidsInGrow App using React Native -->
+            <div class="portfolio-box">
+                <img src="image/childapp.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>KidsInGrow App - React Native</h4>
+                    <p>Designed and developed an engaging and educational mobile app for kids using React Native,
+                        featuring interactive learning activities, fun quizzes, and child-friendly UI.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+
+            <!-- Tic-Tac-Toe using Python -->
+            <div class="portfolio-box">
+                <img src="image/tictactoe.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Tic-Tac-Toe Game using Python</h4>
+                    <p>Created a two-player Tic-Tac-Toe game in Python with an interactive UI.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Travel Management System -->
+            <div class="portfolio-box">
+                <img src="image/travel.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Travel Management System using Java</h4>
+                    <p>Developed a Java-based travel management system to streamline bookings and itineraries.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Car Parking System using Arduino -->
+            <div class="portfolio-box">
+                <img src="image/car.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Car Parking System using Arduino</h4>
+                    <p>Designed an automated car parking system using Arduino for efficient vehicle management.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- E-commerce Shopping App UI/UX -->
+            <div class="portfolio-box">
+                <img src="image/shopping.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>E-commerce Shopping App UI/UX Design</h4>
+                    <p>Crafted a seamless and visually engaging UI/UX for an e-commerce shopping app, integrating
+                        features like product browsing, secure checkout, order tracking, and personalized
+                        recommendations.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+
+
+            </div>
+            <!-- Recipe Blogging Platform UI/UX -->
+            <div class="portfolio-box">
+                <img src="image/food.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Ordering App UI/UX Design</h4>
+                    <p> Designed a modern and user-friendly UI/UX for a food ordering application.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>ME!</span></h2>
+
+        <div class="contact-container">
+            <div class="contact-image" data-aos="fade-left">
+                <img src="image/contact.jpg" alt="Contact Image">
+            </div>
+
+            <div class="contact-form" data-aos="fade-right">
+                <form action="#" name="submit-to-google-sheet">
+                    <div class="input-box">
+                        <input type="text" name="Name" placeholder="Full Name">
+                        <input type="email" name="Email Address" placeholder="Email Address">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="Mobile Number" placeholder="Mobile Number">
+                        <input type="text" name="Email Subject" placeholder="Email Subject">
+                    </div>
+                    <textarea name="Your Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <span id="msg"></span>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by omaima_naeem | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
